@@ -27,7 +27,7 @@ fetch(country_url)
 });
 
 
-function doConversion() {
+ doConversion() {
     let in_amount = document.getElementById('in_amount');
     let out_amount = document.getElementById('out_amount');
     let from_curr = document.getElementById('from_curr');

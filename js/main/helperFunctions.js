@@ -51,6 +51,7 @@ fetch(country_url+api_key)
             }
             */
             console.log(data);
+            console.log({rates}[query]);
             console.log(ex_rate);
             console.log(in_amount.value);
             console.log(ex_rate*in_amount.value);

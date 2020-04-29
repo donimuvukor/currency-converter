@@ -48,8 +48,7 @@ fetch(country_url+api_key)
             for(let r in rates){
                 ex_rate.push(rates[r].val);//Store exchange rate pairs
             }
-            console.log(query);
-            console.log(url);
+            console.log(daata);
             console.log(ex_rate[0]);
             console.log(in_amount.value);
             console.log(ex_rate[0]*in_amount.value);

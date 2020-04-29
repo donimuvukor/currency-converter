@@ -48,11 +48,11 @@ fetch(country_url+api_key)
             for(let d in data){
                 ex_rate.push([d, data[d]]);//Store exchange rate pairs
             }
-            console.log(data);
+            /*console.log(data);
             console.log(url);
             console.log(ex_rate);
             console.log(in_amount.value);
-            console.log(ex_rate[0][1]*in_amount.value);
+            console.log(ex_rate[0][1]*in_amount.value);*/
             url = rate_url;
             out_amount.value = in_amount.value * ex_rate[0][1];
         });

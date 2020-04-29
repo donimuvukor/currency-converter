@@ -38,7 +38,7 @@ fetch(country_url+api_key)
     let out_amount = document.getElementById('out_amount');
     let from_curr = document.getElementById('from_curr');
     let to_curr = document.getElementById('to_curr');
-    query = from_curr.value+'_'+to_curr.value,to_curr.value+'_'+from_curr.value; 
+    query = from_curr.value+'_'+to_curr.value+','+to_curr.value+'_'+from_curr.value; 
     let url = rate_url+query+query_params+api_key;
     fetch(url)
         .then(response => response.json())

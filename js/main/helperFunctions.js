@@ -43,10 +43,10 @@ fetch(country_url+api_key)
     fetch(url)
         .then(response => response.json())
         .then((data) => {
-            let rates = data.results;
+            //let rates = data.results;
             let ex_rate = [];
-            for(let r in rates){
-                ex_rate.push([r, rates[r]]);//Store exchange rate pairs
+            for(let d in data){
+                ex_rate.push([d, data[d]]);//Store exchange rate pairs
             }
             console.log(data);
             console.log(url);

@@ -49,6 +49,7 @@ fetch(country_url+api_key)
                 ex_rate.push([r, rates[r]]);//Store exchange rate pairs
             }
             console.log(data);
+            console.log(url);
             console.log(ex_rate);
             console.log(in_amount.value);
             console.log(ex_rate*in_amount.value);
